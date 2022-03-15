@@ -13,7 +13,7 @@
 
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
-                        this.vid.play();
+                        this.vid.pause();
                     }.bind(this));
 
                     marker.addEventListener('markerLost', function () {
@@ -43,7 +43,7 @@
                     loop
                     crossorigin
                     webkit-playsinline
-                    autoplay="false"
+                    autoplay
                     muted
                     playsinline
                 ></video>
@@ -66,8 +66,8 @@
                 <a-video
                     src="#vid"
                     scale="1 1 1"
-                    position="0 0.1 0"
-                    rotation="0 0 0"
+                    position="0 0.2 0"
+                    rotation="-90 0 0"
                     class="clickable"
                     gesture-handler
                 ></a-video>
